@@ -1,0 +1,40 @@
+{
+  "name": "svelte-minimal",
+  "version": "1.0.2",
+  "description": "A clean, simple front-end starter",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/*.js src/specs/*.js",
+    "start": "rollup --watch -c rollup.config.js src/index.js",
+    "build": "rm -f dist/* && rollup -c rollup.config.js src/index.js",
+    "test": "jest specs --watch",
+    "test-ci": "jest specs"
+  },
+  "author": "Brian Gershon",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/svelte": "^3.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.7.0",
+    "jest": "^25.1.0",
+    "jest-transform-svelte": "^2.1.1",
+    "rollup": "^2.6.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "svelte": "^3.18.2"
+  },
+  "private": true,
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.8.4"
+  }
+}
